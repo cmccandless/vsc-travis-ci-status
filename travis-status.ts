@@ -105,12 +105,7 @@ export default class TravisStatusIndicator {
 
 		let open = require('open');
 		let repo = this.getUserRepo();
-		let base = "https://travis-ci.com/"
-		if (workspace.getConfiguration('travis')['pro']) {
-			base += '.com/'
-		} else {
-			base += '.org/'
-		}
+		let base = "https://travis-ci.com/";
 		if (repo && repo.length === 2) {
 			return open(`${base}${repo[0]}/${repo[1]}`);
 		}
