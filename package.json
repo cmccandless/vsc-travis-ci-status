@@ -61,11 +61,6 @@
           "default": "",
           "description": "Travis repository name for the project"
         },
-        "travis.pro": {
-          "type": "boolean",
-          "default": false,
-          "description": "Travis use pro or community"
-        },
         "travis.github_oauth_token": {
           "type": "string",
           "default": "",
